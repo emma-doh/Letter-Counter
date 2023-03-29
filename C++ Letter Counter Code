@@ -5,10 +5,10 @@ using namespace std;
 int main ( )
 	{
     string word1, word2, input; 
-
+while ( input != "No")
      { 
     cout << "Would you like to know which word is longer?\n";
-    cout << "Please type Yes or No\n";
+    cout << "Please type Yes or No.\n";
     cin >> input;
     if (input == "Yes")
     {
@@ -16,11 +16,7 @@ int main ( )
       cin >> word1;
       cout << "Okay, now enter a second word, please!\n";
       cin >> word2;
- 
-   if (input =="No")
-   { 
-    cout << "Dang, okay. have a good day, then.";
-   }
+   
   int l = word1.length();
   int m = word2.length();
       
@@ -31,13 +27,17 @@ int main ( )
        
      if (l > m)
     {
-    cout << "It appears that " << word1 << " has "<< l << " letters, which is more letters than " << word2 << " has";
+    cout << "It appears that " << word1 << " has "<< l << " letters, which is more letters than " << word2 << " has.\n";
     }
        
     if (l < m)
      {
-    cout << "It appears that " << word2 << " has " << m << " letters, which is more letters than " << word1 << " has";
-      } 
+    cout << "It appears that " << word2 << " has " << m << " letters, which is more letters than " << word1 << " has.\n";
+      }
      }
-    }
+     }
+    if (input =="No")
+   { 
+    cout << "Dang, okay. have a good day, then.";
    }
+  }
