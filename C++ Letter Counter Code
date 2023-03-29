@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main ( )
+	{
+    string word1, word2, input; 
+    
+     { 
+    cout << "Would you like to know which word is longer?\n";
+    cout << "Please type Yes or No\n";
+    cin >> input;
+    if (input == "Yes")
+    {
+      cout << "Yay, okay! Please enter a word\n";
+      cin >> word1;
+      cout << "Okay, now enter a second word, please!\n";
+      cin >> word2;
+ 
+    }
+   else
+   { 
+    cout << "Dang, okay. have a good day, then.";
+   }
+    int l = word1.length();
+    if (word1 > word2)
+    {
+      cout << "It appears that " << word1 << " has "<< l << " letters, which is more letters than " << word2 << " has";
+    }
+    int m = word2.length();
+    if (word2 > word1)
+     {
+    cout << "It appears that " << word2 << " has " << m << " letters, which is more letters than " << word1 << " has";
+      }
+
+    if ( word1 == word2)
+      { 
+    cout << "Wow! What are the chances? It appears that " << word1 << " has "       << l << " which is the same amont of letters that " << word2 << " has";
+      }
+     }
+  }
